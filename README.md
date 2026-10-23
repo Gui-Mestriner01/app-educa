@@ -23,12 +23,23 @@ Para ver no navegador do computador: `npx expo start --web`.
 
 ## O que já funciona
 
-- **Início**: Pipo acenando, missão do dia, total de estrelas e as quatro trilhas (só Números liberada).
-- **Mapa da trilha**: estrada com as fases, estrelas de cada fase, fase atual pulando, Pipo ao lado e fases seguintes bloqueadas.
-- **Fase**: cena ilustrada com os bichinhos animados, pergunta, três respostas com bolinhas para contar.
-  Errou → o cartão treme, apaga e o Pipo diz "Opa, quase!". Acertou → "Muito bem!" e próxima pergunta.
+Quatro trilhas liberadas, **22 fases e 88 exercícios**:
+
+| Trilha | Fases | O que a criança faz |
+| --- | --- | --- |
+| **Números** | 7 | Contar bichinhos, achar onde tem mais/menos, que número vem depois, caçar números |
+| **Letras** | 5 | Vogais, letra inicial (G_ATO), caça-letras, maiúscula e minúscula, primeiras palavras |
+| **Formas** | 5 | Nomes das formas, cores, caça-formas, sequências (o que vem depois?), lados e pontas |
+| **Animais** | 5 | Quem faz esse som?, caça-bichos (4 patas, quem nada), curiosidades, grande e pequeno |
+
+- **Dois tipos de atividade**: *escolher* (2 a 4 respostas: números, letras, bichinhos, formas ou grupinhos) e
+  *tocar em todos* (achar todos os itens certos no meio dos outros).
+- **O Pipo lê a pergunta em voz alta** sozinho e de novo quando a criança toca no alto-falante (voz do próprio aparelho, sem internet).
+- Cada trilha tem seu mundo: cor, mapa e fundo próprios.
+- **Errou** → o cartão treme, apaga e o Pipo diz "Opa, quase!". **Acertou** → "Muito bem!" e próxima.
 - **Fase completa**: 1 a 3 estrelas conforme os acertos de primeira, confete, Pipo comemorando.
-- **Conteúdo**: 5 fases de Números, 16 exercícios, em `src/conteudo/numeros.json`.
+- 15 figuras: ovelha, patinho, laranja, sapo, pintinho, abelha, banana, cachorro, gato, vaca, porco, peixe, uva, elefante e ioiô.
+- 7 formas com rostinho (círculo, quadrado, triângulo, retângulo, estrela, coração, losango) em 7 cores.
 
 ## Como o projeto está organizado
 
@@ -41,37 +52,63 @@ src/
 │  └─ conquista.tsx     Tela de fase completa
 ├─ conteudo/
 │  ├─ schema.ts         Formato de um exercício (validado com Zod)
-│  └─ numeros.json      Os exercícios da trilha Números
+│  └─ *.json            Os exercícios: numeros, letras, formas, animais
 ├─ estado/progresso.ts  Estrelas por fase (Zustand)
 ├─ mascote/Pipo.tsx     O Pipo: pisca, flutua e muda de expressão
-├─ figuras/             Ovelha, patinho, laranja, sapo, pintinho
-├─ componentes/         Botão 3D, cena, barra, estrelas, texto, animações
+├─ figuras/             Os 15 bichinhos e objetos desenhados
+├─ componentes/         Palco, formas, voz do Pipo, botão 3D, cena, barra, estrelas, animações
 └─ tema/                Cores e fontes oficiais
 ```
 
 ## Como criar um exercício novo
 
-Não precisa programar: abra `src/conteudo/numeros.json` e copie um exercício existente, mudando o texto, a figura e a quantidade.
+Não precisa programar: abra o arquivo da trilha em `src/conteudo/` (`numeros.json`, `letras.json`,
+`formas.json` ou `animais.json`), copie um exercício parecido e troque o que quiser.
+
+**Escolher a resposta** — `mostrar` é o que aparece no meio da tela:
 
 ```json
 {
-  "id": "num-1-5",
+  "id": "let-2-6",
   "formato": "escolher",
-  "habilidade": "contar-ate-3",
-  "enunciado": "Quantos pintinhos tem aqui?",
-  "cena": { "cenario": "pasto", "figura": "pintinho", "quantidade": 2 },
+  "habilidade": "letra-inicial",
+  "enunciado": "Com que letra começa GATO?",
+  "fala": "Gato. Com que letra começa gato?",
+  "mostrar": { "tipo": "figura", "figura": "gato", "palavra": "_ATO" },
   "opcoes": [
-    { "valor": "1", "correta": false },
-    { "valor": "2", "correta": true },
-    { "valor": "3", "correta": false }
+    { "tipo": "texto", "valor": "G", "correta": true },
+    { "tipo": "texto", "valor": "B", "correta": false },
+    { "tipo": "texto", "valor": "P", "correta": false }
   ]
 }
 ```
 
-- `figura`: `ovelha`, `patinho`, `laranja`, `sapo` ou `pintinho`
-- `cenario`: `pasto`, `lagoa` ou `pomar`
+**Tocar em todos**:
 
-Se você errar alguma coisa, o app avisa ao abrir. Por exemplo: duas respostas marcadas como certas, ou a resposta certa não bater com a quantidade desenhada.
+```json
+{
+  "id": "for-3-4",
+  "formato": "tocar-todos",
+  "habilidade": "achar-forma",
+  "enunciado": "Toque em todos os corações",
+  "itens": [
+    { "tipo": "forma", "forma": "coracao", "cor": "rosa", "alvo": true },
+    { "tipo": "forma", "forma": "circulo", "cor": "azul", "alvo": false },
+    { "tipo": "forma", "forma": "coracao", "cor": "vermelho", "alvo": true }
+  ]
+}
+```
+
+- O que pode ir em `mostrar`: `cena` (cenário com bichinhos para contar), `figura` (com `palavra` opcional; `_` vira `?`),
+  `letra`, `forma`, `sequencia` (fileira terminando em `?`), `som` (balão tipo "MUUU!") e `pipo` (o Pipo com uma fala).
+- O que pode ser resposta ou item: `numero`, `texto`, `figura`, `forma` ou `grupo` (vários bichinhos iguais).
+- `figura`: `ovelha`, `patinho`, `laranja`, `sapo`, `pintinho`, `abelha`, `banana`, `cachorro`, `gato`, `vaca`, `porco`, `peixe`, `uva`, `elefante`, `ioio`
+- `forma`: `circulo`, `quadrado`, `triangulo`, `retangulo`, `estrela`, `coracao`, `losango`
+- `cor`: `vermelho`, `azul`, `amarelo`, `verde`, `roxo`, `laranja`, `rosa`
+- `fala` é opcional: é o que o Pipo fala em voz alta. Sem ela, ele lê o `enunciado`.
+
+Se você errar alguma coisa, o app avisa ao abrir. Por exemplo: duas respostas marcadas como certas,
+ou a resposta certa não bater com a quantidade desenhada.
 
 ## Comandos úteis
 
@@ -84,6 +121,5 @@ Se você errar alguma coisa, o app avisa ao abrir. Por exemplo: duas respostas m
 ## Próximos passos
 
 1. Salvar o progresso no aparelho (`expo-sqlite`) — hoje as estrelas somem ao fechar o app
-2. Narração em áudio dos enunciados
-3. Trilhas de Letras, Formas e Animais
-4. Área dos responsáveis
+2. Novas atividades a cada 4 dias
+3. Área dos responsáveis

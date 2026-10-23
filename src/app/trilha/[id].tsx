@@ -10,7 +10,7 @@ import { useEntrada, useFlutuar } from '../../componentes/useFlutuar';
 import { buscarTrilha } from '../../conteudo';
 import { SituacaoFase, situacoesDaTrilha, totalEstrelas, useProgresso } from '../../estado/progresso';
 import { Pipo } from '../../mascote/Pipo';
-import { cores } from '../../tema';
+import { cores, estiloDa } from '../../tema';
 
 const ALTURA_LINHA = 132;
 const TOPO = 64;
@@ -39,7 +39,9 @@ function No({
   selecionado,
   onPress,
   indice,
+  corFeita,
 }: {
+  corFeita: string;
   numero: number;
   situacao: SituacaoFase;
   estrelas: number;
@@ -79,7 +81,7 @@ function No({
             {situacao === 'bloqueada' ? (
               <Cadeado />
             ) : (
-              <Texto peso="negrito" tamanho={atual ? 28 : 24} cor={atual ? cores.amareloTexto : cores.verde}>
+              <Texto peso="negrito" tamanho={atual ? 28 : 24} cor={atual ? cores.amareloTexto : corFeita}>
                 {numero}
               </Texto>
             )}
@@ -110,6 +112,7 @@ export default function Mapa() {
     );
   }
 
+  const estilo = estiloDa(trilha.id);
   const situacoes = situacoesDaTrilha(trilha, estrelas);
   const indiceAtual = Math.max(0, situacoes.indexOf('atual'));
   const faseEscolhida = trilha.fases.find((f) => f.id === selecionada) ?? trilha.fases[indiceAtual];
@@ -127,21 +130,21 @@ export default function Mapa() {
   }
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: '#A4DB86' }} edges={['top']}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: estilo.fundoMapa }} edges={['top']}>
       {/* topo */}
       <View style={{ flexDirection: 'row', alignItems: 'center', gap: 10, paddingHorizontal: 16, paddingTop: 8, paddingBottom: 10 }}>
-        <Botao3D cor="#FFFFFF" corBorda="#7FB866" raio={24} altura={48} profundidade={4} rotulo="Voltar" onPress={() => router.back()} style={{ width: 48 }}>
-          <Seta />
+        <Botao3D cor="#FFFFFF" corBorda={estilo.bordaMapa} raio={24} altura={48} profundidade={4} rotulo="Voltar" onPress={() => router.back()} style={{ width: 48 }}>
+          <Seta cor={estilo.cor} />
         </Botao3D>
-        <View style={{ flex: 1, backgroundColor: '#FFFFFF', borderRadius: 999, paddingVertical: 8, paddingHorizontal: 16, borderBottomWidth: 4, borderBottomColor: '#7FB866' }}>
+        <View style={{ flex: 1, backgroundColor: '#FFFFFF', borderRadius: 999, paddingVertical: 8, paddingHorizontal: 16, borderBottomWidth: 4, borderBottomColor: estilo.bordaMapa }}>
           <Texto peso="semi" tamanho={16}>
-            Fazendinha dos {trilha.nome}
+            {estilo.tituloMapa}
           </Texto>
           <Texto tamanho={12} cor={cores.textoSuave}>
             {trilha.descricao}
           </Texto>
         </View>
-        <View style={{ flexDirection: 'row', alignItems: 'center', gap: 4, backgroundColor: '#FFFFFF', borderRadius: 999, paddingHorizontal: 12, paddingVertical: 10, borderBottomWidth: 4, borderBottomColor: '#7FB866' }}>
+        <View style={{ flexDirection: 'row', alignItems: 'center', gap: 4, backgroundColor: '#FFFFFF', borderRadius: 999, paddingHorizontal: 12, paddingVertical: 10, borderBottomWidth: 4, borderBottomColor: estilo.bordaMapa }}>
           <Estrela tamanho={17} />
           <Texto peso="semi" tamanho={15}>
             {totalEstrelas(estrelas)}
@@ -167,6 +170,7 @@ export default function Mapa() {
                 selecionado={faseEscolhida.id === f.id}
                 onPress={() => setSelecionada(f.id)}
                 indice={i}
+                corFeita={estilo.cor}
               />
             </View>
           ))}
@@ -196,7 +200,7 @@ export default function Mapa() {
           borderRadius: 28,
           padding: 16,
           borderBottomWidth: 6,
-          borderBottomColor: '#7FB866',
+          borderBottomColor: estilo.bordaMapa,
         }}
       >
         <View style={{ flexDirection: 'row', alignItems: 'center', gap: 12 }}>
@@ -216,8 +220,8 @@ export default function Mapa() {
           <LinhaEstrelas cheias={estrelas[faseEscolhida.id] ?? 0} tamanho={18} />
         </View>
         <Botao3D
-          cor={cores.verde}
-          corBorda={cores.verdeBorda}
+          cor={estilo.cor}
+          corBorda={estilo.corBorda}
           altura={56}
           rotulo={`Começar a fase ${faseEscolhida.numero}`}
           onPress={() => router.push(`/fase/${faseEscolhida.id}`)}

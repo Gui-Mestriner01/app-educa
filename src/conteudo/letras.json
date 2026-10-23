@@ -1,0 +1,707 @@
+{
+  "id": "letras",
+  "nome": "Letras",
+  "descricao": "Vogais, letras e primeiras palavras",
+  "fases": [
+    {
+      "id": "let-1",
+      "numero": 1,
+      "titulo": "As vogais",
+      "exercicios": [
+        {
+          "id": "let-1-1",
+          "formato": "escolher",
+          "habilidade": "vogal-inicial",
+          "enunciado": "Qual começa com A?",
+          "mostrar": {
+            "tipo": "letra",
+            "letra": "A"
+          },
+          "opcoes": [
+            {
+              "tipo": "figura",
+              "figura": "gato",
+              "correta": false
+            },
+            {
+              "tipo": "figura",
+              "figura": "abelha",
+              "correta": true
+            },
+            {
+              "tipo": "figura",
+              "figura": "vaca",
+              "correta": false
+            }
+          ],
+          "fala": "A de abelha! Qual começa com A?"
+        },
+        {
+          "id": "let-1-2",
+          "formato": "escolher",
+          "habilidade": "vogal-inicial",
+          "enunciado": "Qual começa com E?",
+          "mostrar": {
+            "tipo": "letra",
+            "letra": "E"
+          },
+          "opcoes": [
+            {
+              "tipo": "figura",
+              "figura": "elefante",
+              "correta": true
+            },
+            {
+              "tipo": "figura",
+              "figura": "peixe",
+              "correta": false
+            },
+            {
+              "tipo": "figura",
+              "figura": "sapo",
+              "correta": false
+            }
+          ],
+          "fala": "Qual começa com E?"
+        },
+        {
+          "id": "let-1-3",
+          "formato": "escolher",
+          "habilidade": "vogal-inicial",
+          "enunciado": "Qual começa com I?",
+          "mostrar": {
+            "tipo": "letra",
+            "letra": "I"
+          },
+          "opcoes": [
+            {
+              "tipo": "figura",
+              "figura": "uva",
+              "correta": false
+            },
+            {
+              "tipo": "figura",
+              "figura": "banana",
+              "correta": false
+            },
+            {
+              "tipo": "figura",
+              "figura": "ioio",
+              "correta": true
+            }
+          ],
+          "fala": "Qual começa com I?"
+        },
+        {
+          "id": "let-1-4",
+          "formato": "escolher",
+          "habilidade": "vogal-inicial",
+          "enunciado": "Qual começa com O?",
+          "mostrar": {
+            "tipo": "letra",
+            "letra": "O"
+          },
+          "opcoes": [
+            {
+              "tipo": "figura",
+              "figura": "porco",
+              "correta": false
+            },
+            {
+              "tipo": "figura",
+              "figura": "ovelha",
+              "correta": true
+            },
+            {
+              "tipo": "figura",
+              "figura": "gato",
+              "correta": false
+            }
+          ],
+          "fala": "Qual começa com O?"
+        },
+        {
+          "id": "let-1-5",
+          "formato": "escolher",
+          "habilidade": "vogal-inicial",
+          "enunciado": "Qual começa com U?",
+          "mostrar": {
+            "tipo": "letra",
+            "letra": "U"
+          },
+          "opcoes": [
+            {
+              "tipo": "figura",
+              "figura": "laranja",
+              "correta": false
+            },
+            {
+              "tipo": "figura",
+              "figura": "cachorro",
+              "correta": false
+            },
+            {
+              "tipo": "figura",
+              "figura": "uva",
+              "correta": true
+            }
+          ],
+          "fala": "Qual começa com U?"
+        }
+      ]
+    },
+    {
+      "id": "let-2",
+      "numero": 2,
+      "titulo": "Com que letra começa?",
+      "exercicios": [
+        {
+          "id": "let-2-1",
+          "formato": "escolher",
+          "habilidade": "letra-inicial",
+          "enunciado": "Com que letra começa GATO?",
+          "mostrar": {
+            "tipo": "figura",
+            "figura": "gato",
+            "palavra": "_ATO"
+          },
+          "opcoes": [
+            {
+              "tipo": "texto",
+              "valor": "G",
+              "correta": true
+            },
+            {
+              "tipo": "texto",
+              "valor": "B",
+              "correta": false
+            },
+            {
+              "tipo": "texto",
+              "valor": "P",
+              "correta": false
+            }
+          ],
+          "fala": "Gato. Com que letra começa gato?"
+        },
+        {
+          "id": "let-2-2",
+          "formato": "escolher",
+          "habilidade": "letra-inicial",
+          "enunciado": "Com que letra começa SAPO?",
+          "mostrar": {
+            "tipo": "figura",
+            "figura": "sapo",
+            "palavra": "_APO"
+          },
+          "opcoes": [
+            {
+              "tipo": "texto",
+              "valor": "L",
+              "correta": false
+            },
+            {
+              "tipo": "texto",
+              "valor": "S",
+              "correta": true
+            },
+            {
+              "tipo": "texto",
+              "valor": "V",
+              "correta": false
+            }
+          ],
+          "fala": "Sapo. Com que letra começa sapo?"
+        },
+        {
+          "id": "let-2-3",
+          "formato": "escolher",
+          "habilidade": "letra-inicial",
+          "enunciado": "Com que letra começa BANANA?",
+          "mostrar": {
+            "tipo": "figura",
+            "figura": "banana",
+            "palavra": "_ANANA"
+          },
+          "opcoes": [
+            {
+              "tipo": "texto",
+              "valor": "D",
+              "correta": false
+            },
+            {
+              "tipo": "texto",
+              "valor": "P",
+              "correta": false
+            },
+            {
+              "tipo": "texto",
+              "valor": "B",
+              "correta": true
+            }
+          ],
+          "fala": "Banana. Com que letra começa banana?"
+        },
+        {
+          "id": "let-2-4",
+          "formato": "escolher",
+          "habilidade": "letra-inicial",
+          "enunciado": "Com que letra começa VACA?",
+          "mostrar": {
+            "tipo": "figura",
+            "figura": "vaca",
+            "palavra": "_ACA"
+          },
+          "opcoes": [
+            {
+              "tipo": "texto",
+              "valor": "V",
+              "correta": true
+            },
+            {
+              "tipo": "texto",
+              "valor": "F",
+              "correta": false
+            },
+            {
+              "tipo": "texto",
+              "valor": "C",
+              "correta": false
+            }
+          ],
+          "fala": "Vaca. Com que letra começa vaca?"
+        },
+        {
+          "id": "let-2-5",
+          "formato": "escolher",
+          "habilidade": "letra-inicial",
+          "enunciado": "Com que letra começa PEIXE?",
+          "mostrar": {
+            "tipo": "figura",
+            "figura": "peixe",
+            "palavra": "_EIXE"
+          },
+          "opcoes": [
+            {
+              "tipo": "texto",
+              "valor": "T",
+              "correta": false
+            },
+            {
+              "tipo": "texto",
+              "valor": "P",
+              "correta": true
+            },
+            {
+              "tipo": "texto",
+              "valor": "R",
+              "correta": false
+            }
+          ],
+          "fala": "Peixe. Com que letra começa peixe?"
+        }
+      ]
+    },
+    {
+      "id": "let-3",
+      "numero": 3,
+      "titulo": "Caça-letras",
+      "exercicios": [
+        {
+          "id": "let-3-1",
+          "formato": "tocar-todos",
+          "habilidade": "reconhecer-letra",
+          "enunciado": "Toque em todas as letras A",
+          "itens": [
+            {
+              "tipo": "texto",
+              "valor": "A",
+              "alvo": true
+            },
+            {
+              "tipo": "texto",
+              "valor": "B",
+              "alvo": false
+            },
+            {
+              "tipo": "texto",
+              "valor": "A",
+              "alvo": true
+            },
+            {
+              "tipo": "texto",
+              "valor": "E",
+              "alvo": false
+            },
+            {
+              "tipo": "texto",
+              "valor": "O",
+              "alvo": false
+            },
+            {
+              "tipo": "texto",
+              "valor": "A",
+              "alvo": true
+            }
+          ]
+        },
+        {
+          "id": "let-3-2",
+          "formato": "tocar-todos",
+          "habilidade": "reconhecer-letra",
+          "enunciado": "Toque em todas as letras O",
+          "itens": [
+            {
+              "tipo": "texto",
+              "valor": "C",
+              "alvo": false
+            },
+            {
+              "tipo": "texto",
+              "valor": "O",
+              "alvo": true
+            },
+            {
+              "tipo": "texto",
+              "valor": "Q",
+              "alvo": false
+            },
+            {
+              "tipo": "texto",
+              "valor": "O",
+              "alvo": true
+            },
+            {
+              "tipo": "texto",
+              "valor": "D",
+              "alvo": false
+            },
+            {
+              "tipo": "texto",
+              "valor": "O",
+              "alvo": true
+            }
+          ]
+        },
+        {
+          "id": "let-3-3",
+          "formato": "tocar-todos",
+          "habilidade": "reconhecer-letra",
+          "enunciado": "Toque em todas as letras E",
+          "itens": [
+            {
+              "tipo": "texto",
+              "valor": "E",
+              "alvo": true
+            },
+            {
+              "tipo": "texto",
+              "valor": "F",
+              "alvo": false
+            },
+            {
+              "tipo": "texto",
+              "valor": "B",
+              "alvo": false
+            },
+            {
+              "tipo": "texto",
+              "valor": "E",
+              "alvo": true
+            },
+            {
+              "tipo": "texto",
+              "valor": "H",
+              "alvo": false
+            },
+            {
+              "tipo": "texto",
+              "valor": "E",
+              "alvo": true
+            }
+          ]
+        },
+        {
+          "id": "let-3-4",
+          "formato": "tocar-todos",
+          "habilidade": "reconhecer-letra",
+          "enunciado": "Toque em todas as letras M",
+          "itens": [
+            {
+              "tipo": "texto",
+              "valor": "N",
+              "alvo": false
+            },
+            {
+              "tipo": "texto",
+              "valor": "M",
+              "alvo": true
+            },
+            {
+              "tipo": "texto",
+              "valor": "W",
+              "alvo": false
+            },
+            {
+              "tipo": "texto",
+              "valor": "M",
+              "alvo": true
+            },
+            {
+              "tipo": "texto",
+              "valor": "V",
+              "alvo": false
+            },
+            {
+              "tipo": "texto",
+              "valor": "H",
+              "alvo": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "let-4",
+      "numero": 4,
+      "titulo": "Grande e pequena",
+      "exercicios": [
+        {
+          "id": "let-4-1",
+          "formato": "escolher",
+          "habilidade": "maiuscula-minuscula",
+          "enunciado": "Qual é o a pequenininho?",
+          "mostrar": {
+            "tipo": "letra",
+            "letra": "A"
+          },
+          "opcoes": [
+            {
+              "tipo": "texto",
+              "valor": "e",
+              "correta": false
+            },
+            {
+              "tipo": "texto",
+              "valor": "a",
+              "correta": true
+            },
+            {
+              "tipo": "texto",
+              "valor": "o",
+              "correta": false
+            }
+          ],
+          "fala": "Esse é o A grande. Qual é o a pequenininho?"
+        },
+        {
+          "id": "let-4-2",
+          "formato": "escolher",
+          "habilidade": "maiuscula-minuscula",
+          "enunciado": "Qual é o b pequenininho?",
+          "mostrar": {
+            "tipo": "letra",
+            "letra": "B"
+          },
+          "opcoes": [
+            {
+              "tipo": "texto",
+              "valor": "b",
+              "correta": true
+            },
+            {
+              "tipo": "texto",
+              "valor": "d",
+              "correta": false
+            },
+            {
+              "tipo": "texto",
+              "valor": "p",
+              "correta": false
+            }
+          ],
+          "fala": "Esse é o B grande. Qual é o b pequenininho?"
+        },
+        {
+          "id": "let-4-3",
+          "formato": "escolher",
+          "habilidade": "maiuscula-minuscula",
+          "enunciado": "Qual é o m pequenininho?",
+          "mostrar": {
+            "tipo": "letra",
+            "letra": "M"
+          },
+          "opcoes": [
+            {
+              "tipo": "texto",
+              "valor": "n",
+              "correta": false
+            },
+            {
+              "tipo": "texto",
+              "valor": "w",
+              "correta": false
+            },
+            {
+              "tipo": "texto",
+              "valor": "m",
+              "correta": true
+            }
+          ],
+          "fala": "Esse é o M grande. Qual é o m pequenininho?"
+        },
+        {
+          "id": "let-4-4",
+          "formato": "escolher",
+          "habilidade": "maiuscula-minuscula",
+          "enunciado": "Qual é o g pequenininho?",
+          "mostrar": {
+            "tipo": "letra",
+            "letra": "G"
+          },
+          "opcoes": [
+            {
+              "tipo": "texto",
+              "valor": "g",
+              "correta": true
+            },
+            {
+              "tipo": "texto",
+              "valor": "q",
+              "correta": false
+            },
+            {
+              "tipo": "texto",
+              "valor": "j",
+              "correta": false
+            }
+          ],
+          "fala": "Esse é o G grande. Qual é o g pequenininho?"
+        }
+      ]
+    },
+    {
+      "id": "let-5",
+      "numero": 5,
+      "titulo": "Qual é o nome?",
+      "exercicios": [
+        {
+          "id": "let-5-1",
+          "formato": "escolher",
+          "habilidade": "ler-palavra",
+          "enunciado": "Qual é o nome dele?",
+          "mostrar": {
+            "tipo": "figura",
+            "figura": "peixe",
+            "palavra": ""
+          },
+          "opcoes": [
+            {
+              "tipo": "texto",
+              "valor": "PATO",
+              "correta": false
+            },
+            {
+              "tipo": "texto",
+              "valor": "PEIXE",
+              "correta": true
+            },
+            {
+              "tipo": "texto",
+              "valor": "PORCO",
+              "correta": false
+            }
+          ],
+          "fala": "Qual é o nome dele?"
+        },
+        {
+          "id": "let-5-2",
+          "formato": "escolher",
+          "habilidade": "ler-palavra",
+          "enunciado": "Qual é o nome dela?",
+          "mostrar": {
+            "tipo": "figura",
+            "figura": "uva",
+            "palavra": ""
+          },
+          "opcoes": [
+            {
+              "tipo": "texto",
+              "valor": "UVA",
+              "correta": true
+            },
+            {
+              "tipo": "texto",
+              "valor": "OVO",
+              "correta": false
+            },
+            {
+              "tipo": "texto",
+              "valor": "UNHA",
+              "correta": false
+            }
+          ],
+          "fala": "Qual é o nome dela?"
+        },
+        {
+          "id": "let-5-3",
+          "formato": "escolher",
+          "habilidade": "ler-palavra",
+          "enunciado": "Qual é o nome dele?",
+          "mostrar": {
+            "tipo": "figura",
+            "figura": "gato",
+            "palavra": ""
+          },
+          "opcoes": [
+            {
+              "tipo": "texto",
+              "valor": "GALO",
+              "correta": false
+            },
+            {
+              "tipo": "texto",
+              "valor": "BOLO",
+              "correta": false
+            },
+            {
+              "tipo": "texto",
+              "valor": "GATO",
+              "correta": true
+            }
+          ],
+          "fala": "Qual é o nome dele?"
+        },
+        {
+          "id": "let-5-4",
+          "formato": "escolher",
+          "habilidade": "ler-palavra",
+          "enunciado": "Qual é o nome dela?",
+          "mostrar": {
+            "tipo": "figura",
+            "figura": "vaca",
+            "palavra": ""
+          },
+          "opcoes": [
+            {
+              "tipo": "texto",
+              "valor": "VACA",
+              "correta": true
+            },
+            {
+              "tipo": "texto",
+              "valor": "FACA",
+              "correta": false
+            },
+            {
+              "tipo": "texto",
+              "valor": "VELA",
+              "correta": false
+            }
+          ],
+          "fala": "Qual é o nome dela?"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,624 @@
+{
+  "id": "animais",
+  "nome": "Animais",
+  "descricao": "Sons, bichos e curiosidades",
+  "fases": [
+    {
+      "id": "ani-1",
+      "numero": 1,
+      "titulo": "Quem faz esse som?",
+      "exercicios": [
+        {
+          "id": "ani-1-1",
+          "formato": "escolher",
+          "habilidade": "sons",
+          "enunciado": "Quem faz esse som?",
+          "mostrar": {
+            "tipo": "som",
+            "texto": "MUUU!"
+          },
+          "opcoes": [
+            {
+              "tipo": "figura",
+              "figura": "gato",
+              "correta": false
+            },
+            {
+              "tipo": "figura",
+              "figura": "vaca",
+              "correta": true
+            },
+            {
+              "tipo": "figura",
+              "figura": "peixe",
+              "correta": false
+            }
+          ],
+          "fala": "Quem faz muuuu?"
+        },
+        {
+          "id": "ani-1-2",
+          "formato": "escolher",
+          "habilidade": "sons",
+          "enunciado": "Quem faz esse som?",
+          "mostrar": {
+            "tipo": "som",
+            "texto": "MIAU!"
+          },
+          "opcoes": [
+            {
+              "tipo": "figura",
+              "figura": "gato",
+              "correta": true
+            },
+            {
+              "tipo": "figura",
+              "figura": "porco",
+              "correta": false
+            },
+            {
+              "tipo": "figura",
+              "figura": "abelha",
+              "correta": false
+            }
+          ],
+          "fala": "Quem faz miau?"
+        },
+        {
+          "id": "ani-1-3",
+          "formato": "escolher",
+          "habilidade": "sons",
+          "enunciado": "Quem faz esse som?",
+          "mostrar": {
+            "tipo": "som",
+            "texto": "AU AU!"
+          },
+          "opcoes": [
+            {
+              "tipo": "figura",
+              "figura": "ovelha",
+              "correta": false
+            },
+            {
+              "tipo": "figura",
+              "figura": "sapo",
+              "correta": false
+            },
+            {
+              "tipo": "figura",
+              "figura": "cachorro",
+              "correta": true
+            }
+          ],
+          "fala": "Quem faz au au?"
+        },
+        {
+          "id": "ani-1-4",
+          "formato": "escolher",
+          "habilidade": "sons",
+          "enunciado": "Quem faz esse som?",
+          "mostrar": {
+            "tipo": "som",
+            "texto": "OINC!"
+          },
+          "opcoes": [
+            {
+              "tipo": "figura",
+              "figura": "porco",
+              "correta": true
+            },
+            {
+              "tipo": "figura",
+              "figura": "vaca",
+              "correta": false
+            },
+            {
+              "tipo": "figura",
+              "figura": "pintinho",
+              "correta": false
+            }
+          ],
+          "fala": "Quem faz oinc oinc?"
+        },
+        {
+          "id": "ani-1-5",
+          "formato": "escolher",
+          "habilidade": "sons",
+          "enunciado": "Quem faz esse som?",
+          "mostrar": {
+            "tipo": "som",
+            "texto": "MÉÉÉ!"
+          },
+          "opcoes": [
+            {
+              "tipo": "figura",
+              "figura": "cachorro",
+              "correta": false
+            },
+            {
+              "tipo": "figura",
+              "figura": "ovelha",
+              "correta": true
+            },
+            {
+              "tipo": "figura",
+              "figura": "elefante",
+              "correta": false
+            }
+          ],
+          "fala": "Quem faz méééé?"
+        }
+      ]
+    },
+    {
+      "id": "ani-2",
+      "numero": 2,
+      "titulo": "Mais sons",
+      "exercicios": [
+        {
+          "id": "ani-2-1",
+          "formato": "escolher",
+          "habilidade": "sons",
+          "enunciado": "Quem faz esse som?",
+          "mostrar": {
+            "tipo": "som",
+            "texto": "CROAC!"
+          },
+          "opcoes": [
+            {
+              "tipo": "figura",
+              "figura": "sapo",
+              "correta": true
+            },
+            {
+              "tipo": "figura",
+              "figura": "gato",
+              "correta": false
+            },
+            {
+              "tipo": "figura",
+              "figura": "porco",
+              "correta": false
+            }
+          ],
+          "fala": "Quem faz croac?"
+        },
+        {
+          "id": "ani-2-2",
+          "formato": "escolher",
+          "habilidade": "sons",
+          "enunciado": "Quem faz esse som?",
+          "mostrar": {
+            "tipo": "som",
+            "texto": "QUÉN QUÉN!"
+          },
+          "opcoes": [
+            {
+              "tipo": "figura",
+              "figura": "vaca",
+              "correta": false
+            },
+            {
+              "tipo": "figura",
+              "figura": "abelha",
+              "correta": false
+            },
+            {
+              "tipo": "figura",
+              "figura": "patinho",
+              "correta": true
+            }
+          ],
+          "fala": "Quem faz quén quén?"
+        },
+        {
+          "id": "ani-2-3",
+          "formato": "escolher",
+          "habilidade": "sons",
+          "enunciado": "Quem faz esse som?",
+          "mostrar": {
+            "tipo": "som",
+            "texto": "PIU PIU!"
+          },
+          "opcoes": [
+            {
+              "tipo": "figura",
+              "figura": "pintinho",
+              "correta": true
+            },
+            {
+              "tipo": "figura",
+              "figura": "elefante",
+              "correta": false
+            },
+            {
+              "tipo": "figura",
+              "figura": "cachorro",
+              "correta": false
+            }
+          ],
+          "fala": "Quem faz piu piu?"
+        },
+        {
+          "id": "ani-2-4",
+          "formato": "escolher",
+          "habilidade": "sons",
+          "enunciado": "Quem faz esse som?",
+          "mostrar": {
+            "tipo": "som",
+            "texto": "ZZZZZ!"
+          },
+          "opcoes": [
+            {
+              "tipo": "figura",
+              "figura": "ovelha",
+              "correta": false
+            },
+            {
+              "tipo": "figura",
+              "figura": "abelha",
+              "correta": true
+            },
+            {
+              "tipo": "figura",
+              "figura": "peixe",
+              "correta": false
+            }
+          ],
+          "fala": "Quem faz zzzzz?"
+        }
+      ]
+    },
+    {
+      "id": "ani-3",
+      "numero": 3,
+      "titulo": "Caça-bichos",
+      "exercicios": [
+        {
+          "id": "ani-3-1",
+          "formato": "tocar-todos",
+          "habilidade": "classificar",
+          "enunciado": "Toque em todos que têm 4 patas",
+          "itens": [
+            {
+              "tipo": "figura",
+              "figura": "vaca",
+              "alvo": true
+            },
+            {
+              "tipo": "figura",
+              "figura": "peixe",
+              "alvo": false
+            },
+            {
+              "tipo": "figura",
+              "figura": "gato",
+              "alvo": true
+            },
+            {
+              "tipo": "figura",
+              "figura": "abelha",
+              "alvo": false
+            },
+            {
+              "tipo": "figura",
+              "figura": "cachorro",
+              "alvo": true
+            },
+            {
+              "tipo": "figura",
+              "figura": "pintinho",
+              "alvo": false
+            }
+          ]
+        },
+        {
+          "id": "ani-3-2",
+          "formato": "tocar-todos",
+          "habilidade": "classificar",
+          "enunciado": "Toque em todos que nadam",
+          "itens": [
+            {
+              "tipo": "figura",
+              "figura": "peixe",
+              "alvo": true
+            },
+            {
+              "tipo": "figura",
+              "figura": "abelha",
+              "alvo": false
+            },
+            {
+              "tipo": "figura",
+              "figura": "patinho",
+              "alvo": true
+            },
+            {
+              "tipo": "figura",
+              "figura": "pintinho",
+              "alvo": false
+            },
+            {
+              "tipo": "figura",
+              "figura": "peixe",
+              "alvo": true
+            },
+            {
+              "tipo": "figura",
+              "figura": "gato",
+              "alvo": false
+            }
+          ]
+        },
+        {
+          "id": "ani-3-3",
+          "formato": "tocar-todos",
+          "habilidade": "reconhecer",
+          "enunciado": "Toque em todas as abelhas",
+          "itens": [
+            {
+              "tipo": "figura",
+              "figura": "abelha",
+              "alvo": true
+            },
+            {
+              "tipo": "figura",
+              "figura": "pintinho",
+              "alvo": false
+            },
+            {
+              "tipo": "figura",
+              "figura": "abelha",
+              "alvo": true
+            },
+            {
+              "tipo": "figura",
+              "figura": "banana",
+              "alvo": false
+            },
+            {
+              "tipo": "figura",
+              "figura": "patinho",
+              "alvo": false
+            },
+            {
+              "tipo": "figura",
+              "figura": "abelha",
+              "alvo": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ani-4",
+      "numero": 4,
+      "titulo": "Quem é quem?",
+      "exercicios": [
+        {
+          "id": "ani-4-1",
+          "formato": "escolher",
+          "habilidade": "reconhecer",
+          "enunciado": "Toque no ELEFANTE",
+          "mostrar": {
+            "tipo": "pipo",
+            "fala": "Ele tem uma tromba!"
+          },
+          "opcoes": [
+            {
+              "tipo": "figura",
+              "figura": "porco",
+              "correta": false
+            },
+            {
+              "tipo": "figura",
+              "figura": "elefante",
+              "correta": true
+            },
+            {
+              "tipo": "figura",
+              "figura": "vaca",
+              "correta": false
+            }
+          ]
+        },
+        {
+          "id": "ani-4-2",
+          "formato": "escolher",
+          "habilidade": "curiosidades",
+          "enunciado": "Quem dá leite?",
+          "mostrar": {
+            "tipo": "pipo",
+            "fala": "Hmm, quem será?"
+          },
+          "opcoes": [
+            {
+              "tipo": "figura",
+              "figura": "vaca",
+              "correta": true
+            },
+            {
+              "tipo": "figura",
+              "figura": "gato",
+              "correta": false
+            },
+            {
+              "tipo": "figura",
+              "figura": "peixe",
+              "correta": false
+            }
+          ]
+        },
+        {
+          "id": "ani-4-3",
+          "formato": "escolher",
+          "habilidade": "curiosidades",
+          "enunciado": "Quem faz mel?",
+          "mostrar": {
+            "tipo": "pipo",
+            "fala": "É bem docinho!"
+          },
+          "opcoes": [
+            {
+              "tipo": "figura",
+              "figura": "porco",
+              "correta": false
+            },
+            {
+              "tipo": "figura",
+              "figura": "sapo",
+              "correta": false
+            },
+            {
+              "tipo": "figura",
+              "figura": "abelha",
+              "correta": true
+            }
+          ]
+        },
+        {
+          "id": "ani-4-4",
+          "formato": "escolher",
+          "habilidade": "curiosidades",
+          "enunciado": "Quem é o filhote da galinha?",
+          "mostrar": {
+            "tipo": "pipo",
+            "fala": "Ele é amarelinho!"
+          },
+          "opcoes": [
+            {
+              "tipo": "figura",
+              "figura": "patinho",
+              "correta": false
+            },
+            {
+              "tipo": "figura",
+              "figura": "pintinho",
+              "correta": true
+            },
+            {
+              "tipo": "figura",
+              "figura": "abelha",
+              "correta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ani-5",
+      "numero": 5,
+      "titulo": "Grandes e pequenos",
+      "exercicios": [
+        {
+          "id": "ani-5-1",
+          "formato": "escolher",
+          "habilidade": "tamanho",
+          "enunciado": "Qual é o MAIOR?",
+          "mostrar": {
+            "tipo": "pipo",
+            "fala": "Bem grandão!"
+          },
+          "opcoes": [
+            {
+              "tipo": "figura",
+              "figura": "abelha",
+              "correta": false
+            },
+            {
+              "tipo": "figura",
+              "figura": "pintinho",
+              "correta": false
+            },
+            {
+              "tipo": "figura",
+              "figura": "elefante",
+              "correta": true
+            }
+          ]
+        },
+        {
+          "id": "ani-5-2",
+          "formato": "escolher",
+          "habilidade": "tamanho",
+          "enunciado": "Qual é o MENOR?",
+          "mostrar": {
+            "tipo": "pipo",
+            "fala": "Bem pequenininho!"
+          },
+          "opcoes": [
+            {
+              "tipo": "figura",
+              "figura": "abelha",
+              "correta": true
+            },
+            {
+              "tipo": "figura",
+              "figura": "vaca",
+              "correta": false
+            },
+            {
+              "tipo": "figura",
+              "figura": "elefante",
+              "correta": false
+            }
+          ]
+        },
+        {
+          "id": "ani-5-3",
+          "formato": "escolher",
+          "habilidade": "contar-patas",
+          "enunciado": "Quantas patas tem a vaca?",
+          "mostrar": {
+            "tipo": "figura",
+            "figura": "vaca"
+          },
+          "opcoes": [
+            {
+              "tipo": "numero",
+              "valor": "2",
+              "correta": false
+            },
+            {
+              "tipo": "numero",
+              "valor": "4",
+              "correta": true
+            },
+            {
+              "tipo": "numero",
+              "valor": "6",
+              "correta": false
+            }
+          ]
+        },
+        {
+          "id": "ani-5-4",
+          "formato": "escolher",
+          "habilidade": "contar-patas",
+          "enunciado": "Quantas patas tem o pintinho?",
+          "mostrar": {
+            "tipo": "figura",
+            "figura": "pintinho"
+          },
+          "opcoes": [
+            {
+              "tipo": "numero",
+              "valor": "2",
+              "correta": true
+            },
+            {
+              "tipo": "numero",
+              "valor": "4",
+              "correta": false
+            },
+            {
+              "tipo": "numero",
+              "valor": "3",
+              "correta": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

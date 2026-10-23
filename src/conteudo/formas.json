@@ -1,0 +1,797 @@
+{
+  "id": "formas",
+  "nome": "Formas",
+  "descricao": "Formas, cores e padrões",
+  "fases": [
+    {
+      "id": "for-1",
+      "numero": 1,
+      "titulo": "Conhecendo as formas",
+      "exercicios": [
+        {
+          "id": "for-1-1",
+          "formato": "escolher",
+          "habilidade": "nomear-forma",
+          "enunciado": "Toque no CÍRCULO",
+          "mostrar": {
+            "tipo": "pipo",
+            "fala": "Redondinho como uma bola!"
+          },
+          "opcoes": [
+            {
+              "tipo": "forma",
+              "forma": "quadrado",
+              "cor": "verde",
+              "correta": false
+            },
+            {
+              "tipo": "forma",
+              "forma": "circulo",
+              "cor": "azul",
+              "correta": true
+            },
+            {
+              "tipo": "forma",
+              "forma": "triangulo",
+              "cor": "amarelo",
+              "correta": false
+            }
+          ]
+        },
+        {
+          "id": "for-1-2",
+          "formato": "escolher",
+          "habilidade": "nomear-forma",
+          "enunciado": "Toque no QUADRADO",
+          "mostrar": {
+            "tipo": "pipo",
+            "fala": "Ele tem 4 ladinhos iguais!"
+          },
+          "opcoes": [
+            {
+              "tipo": "forma",
+              "forma": "quadrado",
+              "cor": "vermelho",
+              "correta": true
+            },
+            {
+              "tipo": "forma",
+              "forma": "estrela",
+              "cor": "amarelo",
+              "correta": false
+            },
+            {
+              "tipo": "forma",
+              "forma": "circulo",
+              "cor": "verde",
+              "correta": false
+            }
+          ]
+        },
+        {
+          "id": "for-1-3",
+          "formato": "escolher",
+          "habilidade": "nomear-forma",
+          "enunciado": "Toque no TRIÂNGULO",
+          "mostrar": {
+            "tipo": "pipo",
+            "fala": "Ele tem 3 pontinhas!"
+          },
+          "opcoes": [
+            {
+              "tipo": "forma",
+              "forma": "circulo",
+              "cor": "rosa",
+              "correta": false
+            },
+            {
+              "tipo": "forma",
+              "forma": "retangulo",
+              "cor": "azul",
+              "correta": false
+            },
+            {
+              "tipo": "forma",
+              "forma": "triangulo",
+              "cor": "laranja",
+              "correta": true
+            }
+          ]
+        },
+        {
+          "id": "for-1-4",
+          "formato": "escolher",
+          "habilidade": "nomear-forma",
+          "enunciado": "Toque na ESTRELA",
+          "mostrar": {
+            "tipo": "pipo",
+            "fala": "Brilha brilha!"
+          },
+          "opcoes": [
+            {
+              "tipo": "forma",
+              "forma": "estrela",
+              "cor": "amarelo",
+              "correta": true
+            },
+            {
+              "tipo": "forma",
+              "forma": "coracao",
+              "cor": "vermelho",
+              "correta": false
+            },
+            {
+              "tipo": "forma",
+              "forma": "quadrado",
+              "cor": "roxo",
+              "correta": false
+            }
+          ]
+        },
+        {
+          "id": "for-1-5",
+          "formato": "escolher",
+          "habilidade": "nomear-forma",
+          "enunciado": "Toque no CORAÇÃO",
+          "mostrar": {
+            "tipo": "pipo",
+            "fala": "Cheio de carinho!"
+          },
+          "opcoes": [
+            {
+              "tipo": "forma",
+              "forma": "losango",
+              "cor": "azul",
+              "correta": false
+            },
+            {
+              "tipo": "forma",
+              "forma": "circulo",
+              "cor": "laranja",
+              "correta": false
+            },
+            {
+              "tipo": "forma",
+              "forma": "coracao",
+              "cor": "rosa",
+              "correta": true
+            },
+            {
+              "tipo": "forma",
+              "forma": "triangulo",
+              "cor": "verde",
+              "correta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "for-2",
+      "numero": 2,
+      "titulo": "As cores",
+      "exercicios": [
+        {
+          "id": "for-2-1",
+          "formato": "escolher",
+          "habilidade": "cores",
+          "enunciado": "Toque na bola VERMELHA",
+          "mostrar": {
+            "tipo": "pipo"
+          },
+          "opcoes": [
+            {
+              "tipo": "forma",
+              "forma": "circulo",
+              "cor": "azul",
+              "correta": false
+            },
+            {
+              "tipo": "forma",
+              "forma": "circulo",
+              "cor": "vermelho",
+              "correta": true
+            },
+            {
+              "tipo": "forma",
+              "forma": "circulo",
+              "cor": "amarelo",
+              "correta": false
+            }
+          ]
+        },
+        {
+          "id": "for-2-2",
+          "formato": "escolher",
+          "habilidade": "cores",
+          "enunciado": "Toque na estrela AMARELA",
+          "mostrar": {
+            "tipo": "pipo"
+          },
+          "opcoes": [
+            {
+              "tipo": "forma",
+              "forma": "estrela",
+              "cor": "amarelo",
+              "correta": true
+            },
+            {
+              "tipo": "forma",
+              "forma": "estrela",
+              "cor": "roxo",
+              "correta": false
+            },
+            {
+              "tipo": "forma",
+              "forma": "estrela",
+              "cor": "verde",
+              "correta": false
+            }
+          ]
+        },
+        {
+          "id": "for-2-3",
+          "formato": "escolher",
+          "habilidade": "cores",
+          "enunciado": "Toque no coração ROSA",
+          "mostrar": {
+            "tipo": "pipo"
+          },
+          "opcoes": [
+            {
+              "tipo": "forma",
+              "forma": "coracao",
+              "cor": "vermelho",
+              "correta": false
+            },
+            {
+              "tipo": "forma",
+              "forma": "coracao",
+              "cor": "azul",
+              "correta": false
+            },
+            {
+              "tipo": "forma",
+              "forma": "coracao",
+              "cor": "rosa",
+              "correta": true
+            }
+          ]
+        },
+        {
+          "id": "for-2-4",
+          "formato": "escolher",
+          "habilidade": "cores",
+          "enunciado": "Qual é a cor do sapo?",
+          "mostrar": {
+            "tipo": "figura",
+            "figura": "sapo"
+          },
+          "opcoes": [
+            {
+              "tipo": "forma",
+              "forma": "circulo",
+              "cor": "vermelho",
+              "correta": false
+            },
+            {
+              "tipo": "forma",
+              "forma": "circulo",
+              "cor": "verde",
+              "correta": true
+            },
+            {
+              "tipo": "forma",
+              "forma": "circulo",
+              "cor": "azul",
+              "correta": false
+            }
+          ]
+        },
+        {
+          "id": "for-2-5",
+          "formato": "escolher",
+          "habilidade": "cores",
+          "enunciado": "Qual é a cor da uva?",
+          "mostrar": {
+            "tipo": "figura",
+            "figura": "uva"
+          },
+          "opcoes": [
+            {
+              "tipo": "forma",
+              "forma": "circulo",
+              "cor": "roxo",
+              "correta": true
+            },
+            {
+              "tipo": "forma",
+              "forma": "circulo",
+              "cor": "amarelo",
+              "correta": false
+            },
+            {
+              "tipo": "forma",
+              "forma": "circulo",
+              "cor": "verde",
+              "correta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "for-3",
+      "numero": 3,
+      "titulo": "Caça-formas",
+      "exercicios": [
+        {
+          "id": "for-3-1",
+          "formato": "tocar-todos",
+          "habilidade": "achar-forma",
+          "enunciado": "Toque em todos os triângulos",
+          "itens": [
+            {
+              "tipo": "forma",
+              "forma": "triangulo",
+              "cor": "azul",
+              "alvo": true
+            },
+            {
+              "tipo": "forma",
+              "forma": "circulo",
+              "cor": "vermelho",
+              "alvo": false
+            },
+            {
+              "tipo": "forma",
+              "forma": "quadrado",
+              "cor": "verde",
+              "alvo": false
+            },
+            {
+              "tipo": "forma",
+              "forma": "triangulo",
+              "cor": "laranja",
+              "alvo": true
+            },
+            {
+              "tipo": "forma",
+              "forma": "estrela",
+              "cor": "amarelo",
+              "alvo": false
+            },
+            {
+              "tipo": "forma",
+              "forma": "triangulo",
+              "cor": "rosa",
+              "alvo": true
+            }
+          ]
+        },
+        {
+          "id": "for-3-2",
+          "formato": "tocar-todos",
+          "habilidade": "achar-forma",
+          "enunciado": "Toque em todas as estrelas",
+          "itens": [
+            {
+              "tipo": "forma",
+              "forma": "coracao",
+              "cor": "rosa",
+              "alvo": false
+            },
+            {
+              "tipo": "forma",
+              "forma": "estrela",
+              "cor": "amarelo",
+              "alvo": true
+            },
+            {
+              "tipo": "forma",
+              "forma": "estrela",
+              "cor": "azul",
+              "alvo": true
+            },
+            {
+              "tipo": "forma",
+              "forma": "losango",
+              "cor": "verde",
+              "alvo": false
+            },
+            {
+              "tipo": "forma",
+              "forma": "circulo",
+              "cor": "roxo",
+              "alvo": false
+            },
+            {
+              "tipo": "forma",
+              "forma": "estrela",
+              "cor": "vermelho",
+              "alvo": true
+            }
+          ]
+        },
+        {
+          "id": "for-3-3",
+          "formato": "tocar-todos",
+          "habilidade": "achar-forma",
+          "enunciado": "Toque em todos os círculos",
+          "itens": [
+            {
+              "tipo": "forma",
+              "forma": "circulo",
+              "cor": "verde",
+              "alvo": true
+            },
+            {
+              "tipo": "forma",
+              "forma": "quadrado",
+              "cor": "azul",
+              "alvo": false
+            },
+            {
+              "tipo": "forma",
+              "forma": "circulo",
+              "cor": "laranja",
+              "alvo": true
+            },
+            {
+              "tipo": "forma",
+              "forma": "retangulo",
+              "cor": "rosa",
+              "alvo": false
+            },
+            {
+              "tipo": "forma",
+              "forma": "triangulo",
+              "cor": "amarelo",
+              "alvo": false
+            },
+            {
+              "tipo": "forma",
+              "forma": "circulo",
+              "cor": "roxo",
+              "alvo": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "for-4",
+      "numero": 4,
+      "titulo": "O que vem depois?",
+      "exercicios": [
+        {
+          "id": "for-4-1",
+          "formato": "escolher",
+          "habilidade": "padrao",
+          "enunciado": "O que vem depois?",
+          "mostrar": {
+            "tipo": "sequencia",
+            "itens": [
+              {
+                "tipo": "forma",
+                "forma": "circulo",
+                "cor": "vermelho"
+              },
+              {
+                "tipo": "forma",
+                "forma": "triangulo",
+                "cor": "azul"
+              },
+              {
+                "tipo": "forma",
+                "forma": "circulo",
+                "cor": "vermelho"
+              },
+              {
+                "tipo": "forma",
+                "forma": "triangulo",
+                "cor": "azul"
+              }
+            ]
+          },
+          "opcoes": [
+            {
+              "tipo": "forma",
+              "forma": "quadrado",
+              "cor": "verde",
+              "correta": false
+            },
+            {
+              "tipo": "forma",
+              "forma": "circulo",
+              "cor": "vermelho",
+              "correta": true
+            },
+            {
+              "tipo": "forma",
+              "forma": "estrela",
+              "cor": "amarelo",
+              "correta": false
+            }
+          ],
+          "fala": "Círculo, triângulo, círculo, triângulo... e agora?"
+        },
+        {
+          "id": "for-4-2",
+          "formato": "escolher",
+          "habilidade": "padrao",
+          "enunciado": "O que vem depois?",
+          "mostrar": {
+            "tipo": "sequencia",
+            "itens": [
+              {
+                "tipo": "forma",
+                "forma": "estrela",
+                "cor": "amarelo"
+              },
+              {
+                "tipo": "forma",
+                "forma": "estrela",
+                "cor": "amarelo"
+              },
+              {
+                "tipo": "forma",
+                "forma": "coracao",
+                "cor": "rosa"
+              },
+              {
+                "tipo": "forma",
+                "forma": "estrela",
+                "cor": "amarelo"
+              },
+              {
+                "tipo": "forma",
+                "forma": "estrela",
+                "cor": "amarelo"
+              }
+            ]
+          },
+          "opcoes": [
+            {
+              "tipo": "forma",
+              "forma": "coracao",
+              "cor": "rosa",
+              "correta": true
+            },
+            {
+              "tipo": "forma",
+              "forma": "estrela",
+              "cor": "amarelo",
+              "correta": false
+            },
+            {
+              "tipo": "forma",
+              "forma": "circulo",
+              "cor": "azul",
+              "correta": false
+            }
+          ],
+          "fala": "Estrela, estrela, coração... e agora?"
+        },
+        {
+          "id": "for-4-3",
+          "formato": "escolher",
+          "habilidade": "padrao",
+          "enunciado": "Quem vem depois?",
+          "mostrar": {
+            "tipo": "sequencia",
+            "itens": [
+              {
+                "tipo": "figura",
+                "figura": "sapo"
+              },
+              {
+                "tipo": "figura",
+                "figura": "patinho"
+              },
+              {
+                "tipo": "figura",
+                "figura": "sapo"
+              },
+              {
+                "tipo": "figura",
+                "figura": "patinho"
+              }
+            ]
+          },
+          "opcoes": [
+            {
+              "tipo": "figura",
+              "figura": "patinho",
+              "correta": false
+            },
+            {
+              "tipo": "figura",
+              "figura": "sapo",
+              "correta": true
+            },
+            {
+              "tipo": "figura",
+              "figura": "gato",
+              "correta": false
+            }
+          ],
+          "fala": "Sapo, patinho, sapo, patinho... quem vem agora?"
+        },
+        {
+          "id": "for-4-4",
+          "formato": "escolher",
+          "habilidade": "padrao",
+          "enunciado": "Qual cor vem depois?",
+          "mostrar": {
+            "tipo": "sequencia",
+            "itens": [
+              {
+                "tipo": "forma",
+                "forma": "quadrado",
+                "cor": "azul"
+              },
+              {
+                "tipo": "forma",
+                "forma": "quadrado",
+                "cor": "verde"
+              },
+              {
+                "tipo": "forma",
+                "forma": "quadrado",
+                "cor": "azul"
+              },
+              {
+                "tipo": "forma",
+                "forma": "quadrado",
+                "cor": "verde"
+              }
+            ]
+          },
+          "opcoes": [
+            {
+              "tipo": "forma",
+              "forma": "quadrado",
+              "cor": "verde",
+              "correta": false
+            },
+            {
+              "tipo": "forma",
+              "forma": "quadrado",
+              "cor": "vermelho",
+              "correta": false
+            },
+            {
+              "tipo": "forma",
+              "forma": "quadrado",
+              "cor": "azul",
+              "correta": true
+            }
+          ],
+          "fala": "Azul, verde, azul, verde... e agora?"
+        }
+      ]
+    },
+    {
+      "id": "for-5",
+      "numero": 5,
+      "titulo": "Pontas e lados",
+      "exercicios": [
+        {
+          "id": "for-5-1",
+          "formato": "escolher",
+          "habilidade": "contar-lados",
+          "enunciado": "Quantos lados tem o triângulo?",
+          "mostrar": {
+            "tipo": "forma",
+            "forma": "triangulo",
+            "cor": "laranja"
+          },
+          "opcoes": [
+            {
+              "tipo": "numero",
+              "valor": "3",
+              "correta": true
+            },
+            {
+              "tipo": "numero",
+              "valor": "4",
+              "correta": false
+            },
+            {
+              "tipo": "numero",
+              "valor": "5",
+              "correta": false
+            }
+          ]
+        },
+        {
+          "id": "for-5-2",
+          "formato": "escolher",
+          "habilidade": "contar-lados",
+          "enunciado": "Quantos lados tem o quadrado?",
+          "mostrar": {
+            "tipo": "forma",
+            "forma": "quadrado",
+            "cor": "azul"
+          },
+          "opcoes": [
+            {
+              "tipo": "numero",
+              "valor": "2",
+              "correta": false
+            },
+            {
+              "tipo": "numero",
+              "valor": "4",
+              "correta": true
+            },
+            {
+              "tipo": "numero",
+              "valor": "6",
+              "correta": false
+            }
+          ]
+        },
+        {
+          "id": "for-5-3",
+          "formato": "escolher",
+          "habilidade": "contar-lados",
+          "enunciado": "Quantas pontas tem a estrela?",
+          "mostrar": {
+            "tipo": "forma",
+            "forma": "estrela",
+            "cor": "amarelo"
+          },
+          "opcoes": [
+            {
+              "tipo": "numero",
+              "valor": "3",
+              "correta": false
+            },
+            {
+              "tipo": "numero",
+              "valor": "4",
+              "correta": false
+            },
+            {
+              "tipo": "numero",
+              "valor": "5",
+              "correta": true
+            }
+          ]
+        },
+        {
+          "id": "for-5-4",
+          "formato": "escolher",
+          "habilidade": "forma-objeto",
+          "enunciado": "Qual forma parece uma bola?",
+          "mostrar": {
+            "tipo": "pipo",
+            "fala": "Pensa numa bola!"
+          },
+          "opcoes": [
+            {
+              "tipo": "forma",
+              "forma": "quadrado",
+              "cor": "roxo",
+              "correta": false
+            },
+            {
+              "tipo": "forma",
+              "forma": "triangulo",
+              "cor": "verde",
+              "correta": false
+            },
+            {
+              "tipo": "forma",
+              "forma": "circulo",
+              "cor": "laranja",
+              "correta": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

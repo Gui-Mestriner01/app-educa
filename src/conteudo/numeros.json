@@ -1,7 +1,7 @@
 {
   "id": "numeros",
   "nome": "Números",
-  "descricao": "Contar, comparar e somar",
+  "descricao": "Contar, comparar e sequências",
   "fases": [
     {
       "id": "num-1",
@@ -13,11 +13,28 @@
           "formato": "escolher",
           "habilidade": "contar-ate-3",
           "enunciado": "Quantos patinhos tem na lagoa?",
-          "cena": { "cenario": "lagoa", "figura": "patinho", "quantidade": 2 },
+          "mostrar": {
+            "tipo": "cena",
+            "cenario": "lagoa",
+            "figura": "patinho",
+            "quantidade": 2
+          },
           "opcoes": [
-            { "valor": "1", "correta": false },
-            { "valor": "2", "correta": true },
-            { "valor": "3", "correta": false }
+            {
+              "tipo": "numero",
+              "valor": "1",
+              "correta": false
+            },
+            {
+              "tipo": "numero",
+              "valor": "2",
+              "correta": true
+            },
+            {
+              "tipo": "numero",
+              "valor": "3",
+              "correta": false
+            }
           ]
         },
         {
@@ -25,11 +42,28 @@
           "formato": "escolher",
           "habilidade": "contar-ate-3",
           "enunciado": "Quantas laranjas caíram do pé?",
-          "cena": { "cenario": "pomar", "figura": "laranja", "quantidade": 3 },
+          "mostrar": {
+            "tipo": "cena",
+            "cenario": "pomar",
+            "figura": "laranja",
+            "quantidade": 3
+          },
           "opcoes": [
-            { "valor": "2", "correta": false },
-            { "valor": "3", "correta": true },
-            { "valor": "4", "correta": false }
+            {
+              "tipo": "numero",
+              "valor": "2",
+              "correta": false
+            },
+            {
+              "tipo": "numero",
+              "valor": "3",
+              "correta": true
+            },
+            {
+              "tipo": "numero",
+              "valor": "4",
+              "correta": false
+            }
           ]
         },
         {
@@ -37,11 +71,28 @@
           "formato": "escolher",
           "habilidade": "contar-ate-3",
           "enunciado": "Quantas ovelhas tem no pasto?",
-          "cena": { "cenario": "pasto", "figura": "ovelha", "quantidade": 1 },
+          "mostrar": {
+            "tipo": "cena",
+            "cenario": "pasto",
+            "figura": "ovelha",
+            "quantidade": 1
+          },
           "opcoes": [
-            { "valor": "1", "correta": true },
-            { "valor": "2", "correta": false },
-            { "valor": "3", "correta": false }
+            {
+              "tipo": "numero",
+              "valor": "1",
+              "correta": true
+            },
+            {
+              "tipo": "numero",
+              "valor": "2",
+              "correta": false
+            },
+            {
+              "tipo": "numero",
+              "valor": "3",
+              "correta": false
+            }
           ]
         },
         {
@@ -49,11 +100,28 @@
           "formato": "escolher",
           "habilidade": "contar-ate-3",
           "enunciado": "Quantos sapinhos vieram brincar?",
-          "cena": { "cenario": "lagoa", "figura": "sapo", "quantidade": 3 },
+          "mostrar": {
+            "tipo": "cena",
+            "cenario": "lagoa",
+            "figura": "sapo",
+            "quantidade": 3
+          },
           "opcoes": [
-            { "valor": "1", "correta": false },
-            { "valor": "2", "correta": false },
-            { "valor": "3", "correta": true }
+            {
+              "tipo": "numero",
+              "valor": "1",
+              "correta": false
+            },
+            {
+              "tipo": "numero",
+              "valor": "2",
+              "correta": false
+            },
+            {
+              "tipo": "numero",
+              "valor": "3",
+              "correta": true
+            }
           ]
         }
       ]
@@ -68,11 +136,28 @@
           "formato": "escolher",
           "habilidade": "contar-ate-5",
           "enunciado": "Quantos pintinhos tem no pasto?",
-          "cena": { "cenario": "pasto", "figura": "pintinho", "quantidade": 4 },
+          "mostrar": {
+            "tipo": "cena",
+            "cenario": "pasto",
+            "figura": "pintinho",
+            "quantidade": 4
+          },
           "opcoes": [
-            { "valor": "3", "correta": false },
-            { "valor": "4", "correta": true },
-            { "valor": "5", "correta": false }
+            {
+              "tipo": "numero",
+              "valor": "3",
+              "correta": false
+            },
+            {
+              "tipo": "numero",
+              "valor": "4",
+              "correta": true
+            },
+            {
+              "tipo": "numero",
+              "valor": "5",
+              "correta": false
+            }
           ]
         },
         {
@@ -80,11 +165,28 @@
           "formato": "escolher",
           "habilidade": "contar-ate-5",
           "enunciado": "Quantos patinhos estão nadando?",
-          "cena": { "cenario": "lagoa", "figura": "patinho", "quantidade": 5 },
+          "mostrar": {
+            "tipo": "cena",
+            "cenario": "lagoa",
+            "figura": "patinho",
+            "quantidade": 5
+          },
           "opcoes": [
-            { "valor": "4", "correta": false },
-            { "valor": "5", "correta": true },
-            { "valor": "6", "correta": false }
+            {
+              "tipo": "numero",
+              "valor": "4",
+              "correta": false
+            },
+            {
+              "tipo": "numero",
+              "valor": "5",
+              "correta": true
+            },
+            {
+              "tipo": "numero",
+              "valor": "6",
+              "correta": false
+            }
           ]
         },
         {
@@ -92,11 +194,28 @@
           "formato": "escolher",
           "habilidade": "contar-ate-5",
           "enunciado": "Quantas laranjas tem no chão?",
-          "cena": { "cenario": "pomar", "figura": "laranja", "quantidade": 3 },
+          "mostrar": {
+            "tipo": "cena",
+            "cenario": "pomar",
+            "figura": "laranja",
+            "quantidade": 3
+          },
           "opcoes": [
-            { "valor": "3", "correta": true },
-            { "valor": "4", "correta": false },
-            { "valor": "5", "correta": false }
+            {
+              "tipo": "numero",
+              "valor": "3",
+              "correta": true
+            },
+            {
+              "tipo": "numero",
+              "valor": "4",
+              "correta": false
+            },
+            {
+              "tipo": "numero",
+              "valor": "5",
+              "correta": false
+            }
           ]
         },
         {
@@ -104,11 +223,28 @@
           "formato": "escolher",
           "habilidade": "contar-ate-5",
           "enunciado": "Quantos sapinhos tem na lagoa?",
-          "cena": { "cenario": "lagoa", "figura": "sapo", "quantidade": 4 },
+          "mostrar": {
+            "tipo": "cena",
+            "cenario": "lagoa",
+            "figura": "sapo",
+            "quantidade": 4
+          },
           "opcoes": [
-            { "valor": "2", "correta": false },
-            { "valor": "4", "correta": true },
-            { "valor": "5", "correta": false }
+            {
+              "tipo": "numero",
+              "valor": "2",
+              "correta": false
+            },
+            {
+              "tipo": "numero",
+              "valor": "4",
+              "correta": true
+            },
+            {
+              "tipo": "numero",
+              "valor": "5",
+              "correta": false
+            }
           ]
         }
       ]
@@ -123,11 +259,28 @@
           "formato": "escolher",
           "habilidade": "contar-ate-7",
           "enunciado": "Quantos pintinhos saíram para passear?",
-          "cena": { "cenario": "pasto", "figura": "pintinho", "quantidade": 6 },
+          "mostrar": {
+            "tipo": "cena",
+            "cenario": "pasto",
+            "figura": "pintinho",
+            "quantidade": 6
+          },
           "opcoes": [
-            { "valor": "5", "correta": false },
-            { "valor": "6", "correta": true },
-            { "valor": "7", "correta": false }
+            {
+              "tipo": "numero",
+              "valor": "5",
+              "correta": false
+            },
+            {
+              "tipo": "numero",
+              "valor": "6",
+              "correta": true
+            },
+            {
+              "tipo": "numero",
+              "valor": "7",
+              "correta": false
+            }
           ]
         },
         {
@@ -135,11 +288,28 @@
           "formato": "escolher",
           "habilidade": "contar-ate-7",
           "enunciado": "Quantas laranjas o vento derrubou?",
-          "cena": { "cenario": "pomar", "figura": "laranja", "quantidade": 7 },
+          "mostrar": {
+            "tipo": "cena",
+            "cenario": "pomar",
+            "figura": "laranja",
+            "quantidade": 7
+          },
           "opcoes": [
-            { "valor": "6", "correta": false },
-            { "valor": "7", "correta": true },
-            { "valor": "8", "correta": false }
+            {
+              "tipo": "numero",
+              "valor": "6",
+              "correta": false
+            },
+            {
+              "tipo": "numero",
+              "valor": "7",
+              "correta": true
+            },
+            {
+              "tipo": "numero",
+              "valor": "8",
+              "correta": false
+            }
           ]
         },
         {
@@ -147,11 +317,28 @@
           "formato": "escolher",
           "habilidade": "contar-ate-7",
           "enunciado": "Quantos patinhos tem na lagoa?",
-          "cena": { "cenario": "lagoa", "figura": "patinho", "quantidade": 5 },
+          "mostrar": {
+            "tipo": "cena",
+            "cenario": "lagoa",
+            "figura": "patinho",
+            "quantidade": 5
+          },
           "opcoes": [
-            { "valor": "5", "correta": true },
-            { "valor": "6", "correta": false },
-            { "valor": "7", "correta": false }
+            {
+              "tipo": "numero",
+              "valor": "5",
+              "correta": true
+            },
+            {
+              "tipo": "numero",
+              "valor": "6",
+              "correta": false
+            },
+            {
+              "tipo": "numero",
+              "valor": "7",
+              "correta": false
+            }
           ]
         }
       ]
@@ -166,11 +353,28 @@
           "formato": "escolher",
           "habilidade": "contar-ate-5",
           "enunciado": "Quantas ovelhas tem no pasto?",
-          "cena": { "cenario": "pasto", "figura": "ovelha", "quantidade": 4 },
+          "mostrar": {
+            "tipo": "cena",
+            "cenario": "pasto",
+            "figura": "ovelha",
+            "quantidade": 4
+          },
           "opcoes": [
-            { "valor": "3", "correta": false },
-            { "valor": "4", "correta": true },
-            { "valor": "5", "correta": false }
+            {
+              "tipo": "numero",
+              "valor": "3",
+              "correta": false
+            },
+            {
+              "tipo": "numero",
+              "valor": "4",
+              "correta": true
+            },
+            {
+              "tipo": "numero",
+              "valor": "5",
+              "correta": false
+            }
           ]
         },
         {
@@ -178,11 +382,28 @@
           "formato": "escolher",
           "habilidade": "contar-ate-5",
           "enunciado": "E agora, quantas ovelhas ficaram?",
-          "cena": { "cenario": "pasto", "figura": "ovelha", "quantidade": 2 },
+          "mostrar": {
+            "tipo": "cena",
+            "cenario": "pasto",
+            "figura": "ovelha",
+            "quantidade": 2
+          },
           "opcoes": [
-            { "valor": "1", "correta": false },
-            { "valor": "2", "correta": true },
-            { "valor": "3", "correta": false }
+            {
+              "tipo": "numero",
+              "valor": "1",
+              "correta": false
+            },
+            {
+              "tipo": "numero",
+              "valor": "2",
+              "correta": true
+            },
+            {
+              "tipo": "numero",
+              "valor": "3",
+              "correta": false
+            }
           ]
         },
         {
@@ -190,11 +411,28 @@
           "formato": "escolher",
           "habilidade": "contar-ate-5",
           "enunciado": "Chegaram mais ovelhas! Quantas são?",
-          "cena": { "cenario": "pasto", "figura": "ovelha", "quantidade": 5 },
+          "mostrar": {
+            "tipo": "cena",
+            "cenario": "pasto",
+            "figura": "ovelha",
+            "quantidade": 5
+          },
           "opcoes": [
-            { "valor": "4", "correta": false },
-            { "valor": "5", "correta": true },
-            { "valor": "6", "correta": false }
+            {
+              "tipo": "numero",
+              "valor": "4",
+              "correta": false
+            },
+            {
+              "tipo": "numero",
+              "valor": "5",
+              "correta": true
+            },
+            {
+              "tipo": "numero",
+              "valor": "6",
+              "correta": false
+            }
           ]
         }
       ]
@@ -209,11 +447,28 @@
           "formato": "escolher",
           "habilidade": "contar-ate-10",
           "enunciado": "Quantos pintinhos tem aqui?",
-          "cena": { "cenario": "pasto", "figura": "pintinho", "quantidade": 8 },
+          "mostrar": {
+            "tipo": "cena",
+            "cenario": "pasto",
+            "figura": "pintinho",
+            "quantidade": 8
+          },
           "opcoes": [
-            { "valor": "7", "correta": false },
-            { "valor": "8", "correta": true },
-            { "valor": "9", "correta": false }
+            {
+              "tipo": "numero",
+              "valor": "7",
+              "correta": false
+            },
+            {
+              "tipo": "numero",
+              "valor": "8",
+              "correta": true
+            },
+            {
+              "tipo": "numero",
+              "valor": "9",
+              "correta": false
+            }
           ]
         },
         {
@@ -221,11 +476,361 @@
           "formato": "escolher",
           "habilidade": "contar-ate-10",
           "enunciado": "Quantas laranjas no total?",
-          "cena": { "cenario": "pomar", "figura": "laranja", "quantidade": 9 },
+          "mostrar": {
+            "tipo": "cena",
+            "cenario": "pomar",
+            "figura": "laranja",
+            "quantidade": 9
+          },
           "opcoes": [
-            { "valor": "8", "correta": false },
-            { "valor": "9", "correta": true },
-            { "valor": "10", "correta": false }
+            {
+              "tipo": "numero",
+              "valor": "8",
+              "correta": false
+            },
+            {
+              "tipo": "numero",
+              "valor": "9",
+              "correta": true
+            },
+            {
+              "tipo": "numero",
+              "valor": "10",
+              "correta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "num-6",
+      "numero": 6,
+      "titulo": "Onde tem mais?",
+      "exercicios": [
+        {
+          "id": "num-6-1",
+          "formato": "escolher",
+          "habilidade": "comparar",
+          "enunciado": "Onde tem MAIS laranjas?",
+          "mostrar": {
+            "tipo": "pipo",
+            "fala": "Olha bem!"
+          },
+          "opcoes": [
+            {
+              "tipo": "grupo",
+              "figura": "laranja",
+              "quantidade": 2,
+              "correta": false
+            },
+            {
+              "tipo": "grupo",
+              "figura": "laranja",
+              "quantidade": 5,
+              "correta": true
+            },
+            {
+              "tipo": "grupo",
+              "figura": "laranja",
+              "quantidade": 3,
+              "correta": false
+            }
+          ]
+        },
+        {
+          "id": "num-6-2",
+          "formato": "escolher",
+          "habilidade": "comparar",
+          "enunciado": "Onde tem MENOS patinhos?",
+          "mostrar": {
+            "tipo": "pipo",
+            "fala": "Qual tem menos?"
+          },
+          "opcoes": [
+            {
+              "tipo": "grupo",
+              "figura": "patinho",
+              "quantidade": 4,
+              "correta": false
+            },
+            {
+              "tipo": "grupo",
+              "figura": "patinho",
+              "quantidade": 1,
+              "correta": true
+            },
+            {
+              "tipo": "grupo",
+              "figura": "patinho",
+              "quantidade": 3,
+              "correta": false
+            }
+          ]
+        },
+        {
+          "id": "num-6-3",
+          "formato": "escolher",
+          "habilidade": "comparar",
+          "enunciado": "Onde tem MAIS pintinhos?",
+          "mostrar": {
+            "tipo": "pipo",
+            "fala": "Conta comigo!"
+          },
+          "opcoes": [
+            {
+              "tipo": "grupo",
+              "figura": "pintinho",
+              "quantidade": 3,
+              "correta": false
+            },
+            {
+              "tipo": "grupo",
+              "figura": "pintinho",
+              "quantidade": 2,
+              "correta": false
+            },
+            {
+              "tipo": "grupo",
+              "figura": "pintinho",
+              "quantidade": 6,
+              "correta": true
+            }
+          ]
+        },
+        {
+          "id": "num-6-4",
+          "formato": "escolher",
+          "habilidade": "comparar",
+          "enunciado": "Onde tem MENOS peixinhos?",
+          "mostrar": {
+            "tipo": "pipo",
+            "fala": "Hmm..."
+          },
+          "opcoes": [
+            {
+              "tipo": "grupo",
+              "figura": "peixe",
+              "quantidade": 5,
+              "correta": false
+            },
+            {
+              "tipo": "grupo",
+              "figura": "peixe",
+              "quantidade": 2,
+              "correta": true
+            },
+            {
+              "tipo": "grupo",
+              "figura": "peixe",
+              "quantidade": 4,
+              "correta": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "num-7",
+      "numero": 7,
+      "titulo": "Que número vem depois?",
+      "exercicios": [
+        {
+          "id": "num-7-1",
+          "formato": "escolher",
+          "habilidade": "sequencia-numeros",
+          "enunciado": "Que número vem depois?",
+          "mostrar": {
+            "tipo": "sequencia",
+            "itens": [
+              {
+                "tipo": "numero",
+                "valor": "1"
+              },
+              {
+                "tipo": "numero",
+                "valor": "2"
+              },
+              {
+                "tipo": "numero",
+                "valor": "3"
+              }
+            ]
+          },
+          "opcoes": [
+            {
+              "tipo": "numero",
+              "valor": "4",
+              "correta": true
+            },
+            {
+              "tipo": "numero",
+              "valor": "2",
+              "correta": false
+            },
+            {
+              "tipo": "numero",
+              "valor": "6",
+              "correta": false
+            }
+          ],
+          "fala": "Um, dois, três... e depois?"
+        },
+        {
+          "id": "num-7-2",
+          "formato": "escolher",
+          "habilidade": "sequencia-numeros",
+          "enunciado": "Que número vem depois?",
+          "mostrar": {
+            "tipo": "sequencia",
+            "itens": [
+              {
+                "tipo": "numero",
+                "valor": "3"
+              },
+              {
+                "tipo": "numero",
+                "valor": "4"
+              },
+              {
+                "tipo": "numero",
+                "valor": "5"
+              }
+            ]
+          },
+          "opcoes": [
+            {
+              "tipo": "numero",
+              "valor": "7",
+              "correta": false
+            },
+            {
+              "tipo": "numero",
+              "valor": "6",
+              "correta": true
+            },
+            {
+              "tipo": "numero",
+              "valor": "4",
+              "correta": false
+            }
+          ],
+          "fala": "Três, quatro, cinco... e depois?"
+        },
+        {
+          "id": "num-7-3",
+          "formato": "escolher",
+          "habilidade": "sequencia-numeros",
+          "enunciado": "Que número vem depois?",
+          "mostrar": {
+            "tipo": "sequencia",
+            "itens": [
+              {
+                "tipo": "numero",
+                "valor": "5"
+              },
+              {
+                "tipo": "numero",
+                "valor": "6"
+              },
+              {
+                "tipo": "numero",
+                "valor": "7"
+              }
+            ]
+          },
+          "opcoes": [
+            {
+              "tipo": "numero",
+              "valor": "8",
+              "correta": true
+            },
+            {
+              "tipo": "numero",
+              "valor": "9",
+              "correta": false
+            },
+            {
+              "tipo": "numero",
+              "valor": "5",
+              "correta": false
+            }
+          ],
+          "fala": "Cinco, seis, sete... e depois?"
+        },
+        {
+          "id": "num-7-4",
+          "formato": "tocar-todos",
+          "habilidade": "reconhecer-numero",
+          "enunciado": "Toque em todos os números 3",
+          "itens": [
+            {
+              "tipo": "numero",
+              "valor": "3",
+              "alvo": true
+            },
+            {
+              "tipo": "numero",
+              "valor": "5",
+              "alvo": false
+            },
+            {
+              "tipo": "numero",
+              "valor": "3",
+              "alvo": true
+            },
+            {
+              "tipo": "numero",
+              "valor": "8",
+              "alvo": false
+            },
+            {
+              "tipo": "numero",
+              "valor": "2",
+              "alvo": false
+            },
+            {
+              "tipo": "numero",
+              "valor": "3",
+              "alvo": true
+            }
+          ]
+        },
+        {
+          "id": "num-7-5",
+          "formato": "tocar-todos",
+          "habilidade": "reconhecer-numero",
+          "enunciado": "Toque em todos os números 7",
+          "itens": [
+            {
+              "tipo": "numero",
+              "valor": "1",
+              "alvo": false
+            },
+            {
+              "tipo": "numero",
+              "valor": "7",
+              "alvo": true
+            },
+            {
+              "tipo": "numero",
+              "valor": "4",
+              "alvo": false
+            },
+            {
+              "tipo": "numero",
+              "valor": "7",
+              "alvo": true
+            },
+            {
+              "tipo": "numero",
+              "valor": "9",
+              "alvo": false
+            },
+            {
+              "tipo": "numero",
+              "valor": "6",
+              "alvo": false
+            }
           ]
         }
       ]

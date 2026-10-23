@@ -1,3 +1,6 @@
+import animaisBruto from './animais.json';
+import formasBruto from './formas.json';
+import letrasBruto from './letras.json';
 import numerosBruto from './numeros.json';
 import { Fase, Trilha, TrilhaSchema } from './schema';
 
@@ -15,7 +18,12 @@ function carregar(bruto: unknown, nomeArquivo: string): Trilha {
   return r.data;
 }
 
-export const TRILHAS: Trilha[] = [carregar(numerosBruto, 'numeros.json')];
+export const TRILHAS: Trilha[] = [
+  carregar(numerosBruto, 'numeros.json'),
+  carregar(letrasBruto, 'letras.json'),
+  carregar(formasBruto, 'formas.json'),
+  carregar(animaisBruto, 'animais.json'),
+];
 
 export function buscarTrilha(id: string): Trilha | undefined {
   return TRILHAS.find((t) => t.id === id);
@@ -30,4 +38,4 @@ export function buscarFase(faseId: string): { trilha: Trilha; fase: Fase } | und
 }
 
 export { TrilhaSchema };
-export type { Exercicio, Fase, Trilha } from './schema';
+export type { Exercicio, ExercicioEscolher, ExercicioTocarTodos, Fase, Mostrar, Trilha, Visual } from './schema';

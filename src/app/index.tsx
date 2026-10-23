@@ -11,7 +11,7 @@ import { useEntrada } from '../componentes/useFlutuar';
 import { TRILHAS } from '../conteudo';
 import { situacoesDaTrilha, totalEstrelas, useProgresso } from '../estado/progresso';
 import { Pipo } from '../mascote/Pipo';
-import { cores } from '../tema';
+import { cores, estiloDa } from '../tema';
 
 type CartaoTrilha = {
   id: string;
@@ -90,27 +90,31 @@ function Cartao({ c, indice }: { c: CartaoTrilha; indice: number }) {
   );
 }
 
+const ICONES: Record<string, ReactNode> = {
+  numeros: <Texto peso="negrito" tamanho={15} cor="#FFFFFF">123</Texto>,
+  letras: <Texto peso="negrito" tamanho={16} cor="#FFFFFF">Aa</Texto>,
+  formas: <IconeForma />,
+  animais: <IconePata />,
+};
+
 export default function Inicio() {
   const estrelas = useProgresso((s) => s.estrelasPorFase);
-  const numeros = TRILHAS[0];
-  const situacoes = situacoesDaTrilha(numeros, estrelas);
-  const feitas = situacoes.filter((s) => s === 'feita').length;
-  const missao = Math.min(feitas, 3);
+  const feitasHoje = TRILHAS.reduce((soma, t) => soma + situacoesDaTrilha(t, estrelas).filter((s) => s === 'feita').length, 0);
+  const missao = Math.min(feitasHoje, 3);
 
-  const cartoes: CartaoTrilha[] = [
-    {
-      id: 'numeros',
-      nome: 'Números',
-      cor: cores.verde,
-      corBorda: cores.verdeBorda,
-      icone: <Texto peso="negrito" tamanho={15} cor="#FFFFFF">123</Texto>,
+  const cartoes: CartaoTrilha[] = TRILHAS.map((t) => {
+    const estilo = estiloDa(t.id);
+    const feitas = situacoesDaTrilha(t, estrelas).filter((s) => s === 'feita').length;
+    return {
+      id: t.id,
+      nome: t.nome,
+      cor: estilo.cor,
+      corBorda: estilo.corBorda,
+      icone: ICONES[t.id] ?? <IconeForma />,
       disponivel: true,
-      detalhe: `Fase ${Math.min(feitas + 1, numeros.fases.length)} de ${numeros.fases.length}`,
-    },
-    { id: 'letras', nome: 'Letras', cor: cores.azul, corBorda: cores.azulBorda, icone: <Texto peso="negrito" tamanho={16} cor="#FFFFFF">Aa</Texto>, disponivel: false, detalhe: 'Em breve' },
-    { id: 'formas', nome: 'Formas', cor: cores.roxo, corBorda: cores.roxoBorda, icone: <IconeForma />, disponivel: false, detalhe: 'Em breve' },
-    { id: 'animais', nome: 'Animais', cor: cores.amarelo, corBorda: cores.amareloBorda, icone: <IconePata />, disponivel: false, detalhe: 'Em breve' },
-  ];
+      detalhe: feitas >= t.fases.length ? 'Completa!' : `Fase ${feitas + 1} de ${t.fases.length}`,
+    };
+  });
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: cores.fundo }} edges={['top']}>
@@ -146,7 +150,7 @@ export default function Inicio() {
             <Pipo expressao="acenando" tamanho={170} />
             <View style={{ flex: 1, marginBottom: 86, marginLeft: -6, backgroundColor: '#FFFFFF', borderRadius: 20, padding: 12 }}>
               <Texto peso="semi" tamanho={15}>
-                Tem ovelhinha na fazenda! Bora contar?
+                Tem bichinho, letra e forma esperando você!
               </Texto>
             </View>
           </View>
